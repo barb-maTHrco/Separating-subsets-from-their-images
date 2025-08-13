@@ -9,3 +9,10 @@
 17 9 has m= 9
 17 10 has m= 9
 
+23 1 has m= 6
+23 2 has m= 8
+23 3 has m= 7
+23 4 has m= 8
+23 5 has m= 7
+23 6 has m= 12
+23 7 has m= 12
