@@ -1,0 +1,10 @@
+17 1 has m= 5
+17 2 has m= 6
+17 3 has m= 6
+17 4 has m= 7
+17 5 has m= 7
+17 6 has m= 7
+17 7 has m= 7
+17 8 has m= 7
+17 9 has m= 9
+17 10 has m= 9
