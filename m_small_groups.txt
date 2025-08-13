@@ -8,3 +8,13 @@
 17 8 has m= 7
 17 9 has m= 9
 17 10 has m= 9
+
+
+19 1 has m= 5
+19 2 has m= 5
+19 3 has m= 5
+19 4 has m= 5
+19 5 has m= 5
+19 6 has m= 5
+19 7 has m= 10
+19 8 has m= 10
