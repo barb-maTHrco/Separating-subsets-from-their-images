@@ -65,5 +65,17 @@ MixHSA:=function(H,S);
 end function;
 
 //
+// f is an element in Sym(m) wr C2 such that f^2 \in H
+QHf:=function(H,f);
+  n:=Degree(H);
+  // first define Q0
+  gen:=Generators(H);
+  S := Sym(2*n);
+  gen2 := [S!([i^g : i in [1..n]] cat [i^(f^(-1)*g*f)+n : i in [1..n]]) : g in gen];
+  Q0:=sub<S|gen2>;
+  f_ := S!([i^f + n: i in [1..n]] cat [i^f: i in [1..n]]);
+  Q := sub<S|gen2 cat [f_]>;
+  return Q;
+end function;
 
 //
