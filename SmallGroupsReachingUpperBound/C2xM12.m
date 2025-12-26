@@ -8,18 +8,20 @@ C2H:=function(H);
   t:=S!([i+n : i in [1..n]] cat [1..n]);
   return sub<S|gen2 cat [t]>;
  end function;
-
+ 
+load m12;
 H := C2H(G);
 
 
-AllSetsSeparable := function(G,n,k,r);
-// G is a group, k the size of the set, r is how much homogenous we are, n is the degree
+AllSetsSeparable := function(G,n,k);
+// G is a group, k the size of the set, n is the degree
 // The function returns true if all sets of size k are self separable, and false otherwise
     Domain := GSet(G);
     everyone_separable := true; 
 
-    // first we can add arbitrary r points, since r-homogenous
-    A:=&join[{Domain[i]} : i in [1..r]];
+    // first we can add arbitrary 5 blocks to fill, because of the properties of M12
+    r := 10;
+    A:=&join[{Domain[i]} : i in [1..5] cat [13..17]];
     // then we have another k - r points to add
     B:= &join[{Domain[i]} : i in [r+1..n]];
 
@@ -37,4 +39,4 @@ AllSetsSeparable := function(G,n,k,r);
   return everyone_separable;
  end function;
 
- AllSetsSeparable(H, 24, 12, 1);
+ AllSetsSeparable(H, 24, 12);
