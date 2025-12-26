@@ -2,7 +2,7 @@ This is the code supporting the paper Separating Subsets from their Images.
 
 In the file m(G).m is the code for computing the parameter $\mathop m$.
 
-The file m_small_groups.txt contains the parameter $\mathop m$ computed for groups of degrees up to $19$, degree $21$ and degree $23$. The code for this computation is in the folder code_for_small_groups
+The file m_small_groups.txt contains the parameter $\mathop m$ computed for groups of degrees up to $19$, degree $21$ and degree $23$. The code for this computation is in the folder code_for_small_groups.
 
 The folder SmallGroupsReachingUpperBound contains the files used in the computation of groups that reach the upper bound for the parameter $\mathop m$, that is the groups $G$ for which $\mathop m(G) = \lceil (m+1)/2 \rceil$.
 
