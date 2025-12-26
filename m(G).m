@@ -35,7 +35,7 @@ end function;
 
 // EXAMPLE OF USE
 
-//r:= 3;  // here we manually set how much homogenous we are, it helps a little.
+//r:= 3;  // here we manually set how much homogenous we are.
 //G := PGL(2,i); // here we choose the permutation group
 //M := m(G,r);
 //print "PGL(", 2, ",",i,") has m = ", M;
